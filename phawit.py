@@ -1,4 +1,6 @@
 from pythainlp.tokenize import word_tokenize
+from datetime import datetime
+
 text = ' เีึ่ก | วาตศี | ยนลฮา | าทาัว | ฮขขกห | ..น้้ | ณมวเ.'
 #text = input('Enter your text: ')
 
@@ -218,8 +220,9 @@ def check(text_decode,n_check_word):
     return text_decode,word_true,q
 
 
+time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 file = open("decoded.txt","a") 
-file.write('-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-START-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-\n')
+file.write('-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- {} -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-\n'.format(time))
 file.close()
 
 key_ok,word_true_ok,q_ok,text_dict_ok = ofen_key()
