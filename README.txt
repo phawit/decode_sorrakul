@@ -11,3 +11,7 @@ $ python3 decode_known_key.py
 
 **ofen_key.txt ใส่ key ที่คิดว่ามีโอกาสเป็นไปได้จะใช้ในการ test ในช่วงต้นของ phawit.py
 **decoded.txt out_put ของ phawit.py
+
+
+
+
